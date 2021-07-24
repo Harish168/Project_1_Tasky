@@ -88,6 +88,7 @@ const deleteCard = (event) => {
   }
 };
 
+//editCard is for edit the content by using contenteditable attributes
 const editCard = (event) => {
   event=window.event;
   const targetID = event.target.id;
@@ -145,5 +146,11 @@ const saveEditChanges = (event) => {
     return task;  /*IMPORTANT becz map will create new array and update all information
     if we not write return here already exsisted data is not added to globalStore */
   }); 
-  localStorage.setItem("tasky",JSON.stringify({cards:globalStore}));
+  localStorage.setItem("tasky",JSON.stringify({cards:globalStore})); // update to localstorage
+  // after update want to disable the editable  functions 
+  taskTitle.setAttribute("contenteditable","false");
+  taskDescription.setAttribute("contenteditable","false");
+  taskType.setAttribute("contenteditable","false");
+  submitButton.removeAttribute("onclick");
+  submitButton.innerHTML = "Open Task"; 
 };
