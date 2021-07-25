@@ -3,6 +3,7 @@ const taskContainer = document.querySelector(".task_container"); //directly acce
 let globalStore = []; /*we use array for storing becz if we use variable to store                        
 then it will override the old data then we can get only one card */
 
+//generate new card dynamically onclick on savechanges button  
 const generateNewCard = (taskData) => `
     <div class="col-md-6 col-lg-4" >
       <div class="card">
@@ -33,6 +34,7 @@ const generateNewCard = (taskData) => `
     </div>
 `
 
+//it 
 const loadInitialCardData = () => {
 
   const getCardData = localStorage.getItem("tasky"); // from local storage to get card data
@@ -77,8 +79,9 @@ const deleteCard = (event) => {
   //id
   const targetID = event.target.id;
   const tagname = event.target.tagName;
-
+  //filtering the card
   globalStore = globalStore.filter((cardObject) => cardObject.id !== targetID);
+  //updated to localstore
   localStorage.setItem("tasky",JSON.stringify({cards:globalStore}));
   //contack child
   if(tagname === "BUTTON"){
@@ -154,3 +157,4 @@ const saveEditChanges = (event) => {
   submitButton.removeAttribute("onclick");
   submitButton.innerHTML = "Open Task"; 
 };
+

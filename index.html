@@ -39,54 +39,38 @@
          <div class="modal-body">
            <div class="mb-3">
              <label for="imageurl" class="form-label">Image Url</label>
-             <input 
-              type="url" 
-              class="form-control"
-              id="imageurl" 
-              aria-describedby="Image url"
-              placeholder="Eg: https//image.jpg"
+             <input               
+              type="url" class="form-control" id="imageurl" placeholder="Eg: https//image.jpg"               
+              aria-describedby="Image url"             
              >
            </div>
            <div class="mb-3">
             <label for="tasktitle" class="form-label">Task Tittle</label>
-            <input  
-              type="text"  
-              class="form-control"  
-              id="tasktitle"  
-              aria-describedby="Task Tittle"
-              placeholder="Eg:API Integration"
+            <input                  
+              type="text"class="form-control" id="tasktitle" placeholder="Eg:API Integration"                
+              aria-describedby="Task Tittle"          
             >
           </div>
           <div class="mb-3">
             <label for="tasktype" class="form-label">Task Type</label>
-            <input
-              type="text"  
-              class="form-control"  
-              id="tasktype"  
-              aria-describedby="Task Type"
-              placeholder="Eg: Work"
+            <input                
+              type="text" class="form-control" id="tasktype" placeholder="Eg: Work"                
+              aria-describedby="Task Type"              
             >
           </div>
           <div class="mb-3">
             <label for="taskdescription" class="form-label">Task Description</label>
             <textarea 
-              rows="2"
-              class="form-control"  
-              id="taskdescription"  
+              rows="2" class="form-control" id="taskdescription" placeholder="Describe your task in detail"
               aria-describedby="Task Description"
-              placeholder="Describe your task in detail"
             ></textarea>
           </div>
          </div>
          <div class="modal-footer">
            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
            <button 
-             type="button"  
-             class="btn btn-primary"  
-             onclick="saveChanges()"
-             data-bs-dismiss="modal"
-            >Save changes
-            </button>
+             type="button" class="btn btn-primary" onclick="saveChanges()" data-bs-dismiss="modal"
+           >Save changes</button>
          </div>
        </div>
      </div>
@@ -120,11 +104,8 @@
         <div class="col-lg-6 col-md-8">
           <div class="input-group mb-3 shadow">
             <input 
-              type="text" 
-              class="form-control" 
-              placeholder="Search Task" 
-              aria-label="Recipient's username" 
-              aria-describedby="basic-addon2"
+              type="text" class="form-control" placeholder="Search Task" 
+              aria-label="Recipient's username" aria-describedby="basic-addon2"
             >
             <span class="input-group-text" id="basic-addon2">
               <i class="fas fa-search"></i>
@@ -136,7 +117,7 @@
         <div class="row task_container">
           <!--code for card creating.we want to create new card while clicking Addnew button 
           so created funtion "generateNewCard" in JSFile-->
-          <!--<div class="col-md-6 col-lg-4" >
+  <!--<div class="col-md-6 col-lg-4" >
       <div class="card">
         <div class="card-header d-flex justify-content-end gap-2">
           <button type="button" class="btn btn-outline-success" id=${taskData.id} onclick="editCard.apply(this,arguments)">
@@ -146,20 +127,14 @@
             <i class="fas fa-trash-alt" id=${taskData.id} onclick="deleteCard.apply(this,arguments)"></i>
           </button>
         </div>
-        <img
-            src=${taskData.imageUrl}
-            class="card-img-top" 
-            alt="image1"
-        />
+        <imgsrc=${taskData.imageUrl}class="card-img-top" alt="image1"/>
         <div class="card-body">
           <h5 class="card-title">${taskData.taskTitle}</h5>
           <p class="card-text">${taskData.taskDescription}</p>
           <a href="#" class="btn btn-primary">${taskData.taskType}</a>
         </div>
         <div class="card-footer text-muted">
-          <button type="button" id=${taskData.id} class="btn btn-outline-primary float-end" >
-            Open Task
-          </button>
+          <button type="button" id=${taskData.id} class="btn btn-outline-primary float-end">Open Task</button>
         </div>
       </div>
     </div>-->
