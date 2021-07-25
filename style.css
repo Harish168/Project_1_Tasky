@@ -1,37 +1,4 @@
 body{
     background-color: #ebf2ff;
-    font-family: "Poppins", sans-serif;
-    
+    font-family: "Poppins", sans-serif;   
 }
-/*
-.navbar{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #cc0000;
-    color: white;
-    padding: em;
-    
-}*/
-/*.navbar{
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.navbar a{
-    float: left;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-}
-.navbar a:hover{
-    margin-top: 30px;
-    height: 1500;
-}
-.main{
-    padding: 16px;
-    margin-top: 30px;
-    height: 1500px;
-}*/
