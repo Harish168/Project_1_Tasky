@@ -80,7 +80,7 @@ const deleteCard = (event) => {
 
   globalStore = globalStore.filter((cardObject) => cardObject.id !== targetID);
   localStorage.setItem("tasky",JSON.stringify({cards:globalStore}));
-
+  //contack child
   if(tagname === "BUTTON"){
     return taskContainer.removeChild(event.target.parentNode.parentNode.parentNode);
   }else{
